@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.tipcalculator.MainActivity">
+
+    <SeekBar
+        android:id="@+id/seekTip"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:max="10"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTotal"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/titleTotal"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTip" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/txtCalculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleAmount"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/titleAmount"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/titleTip"
+        android:layout_width="119dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/titleTip"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleAmount" />
+
+    <TextView
+        android:id="@+id/txtTipPecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/initialPercentage"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekTip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="215dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/initialvalue"
+        android:inputType="textPersonName|number|numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/titleAmount"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/txtTip"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/initialvalue"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/titleTip"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmount" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="213dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/initialvalue"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/titleTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtTip" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtTitle"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
